@@ -1,0 +1,8 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_DUCKFOOT_LEFT
+	def_bool $(shields_list_contains,duckfoot_left)
+
+config SHIELD_DUCKFOOT_RIGHT
+	def_bool $(shields_list_contains,duckfoot_right)
