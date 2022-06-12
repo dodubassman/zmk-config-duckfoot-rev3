@@ -1,0 +1,12 @@
+file_format: "1"
+id: duckfoot3
+name: "DuckFoot v3" 
+type: shield
+url: https://github.com/dodubassman
+requires: [pro_micro]
+features:
+  - keys
+  - encoder
+siblings:
+  - duckfoot3_left
+  - duckfoot3_right

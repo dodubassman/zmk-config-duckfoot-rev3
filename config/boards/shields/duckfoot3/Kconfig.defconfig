@@ -4,7 +4,7 @@
 if SHIELD_DUCKFOOT3_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "DuckFootV3"
+	default "DuckFoot v3"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
