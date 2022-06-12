@@ -5,3 +5,7 @@
  */
 
 #include "duckfoot3.dtsi"
+
+&left_encoder {
+    status = "okay";
+};
