@@ -56,6 +56,7 @@
 
         keymap {
             compatible = "zmk,keymap";
+            
             default_layer {
 		bindings = <
 	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(K_PWR)) L	&kp O			&mt LA(I) Y			&kp SEMI		&kp BSPC
@@ -63,8 +64,11 @@
 	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K		&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
 	    						&kp LALT	&kp LGUI		&mt LSHIFT BSPC 	&mo 1				&mo 2		&kp SPACE			&mt RCTL TAB	&kp LG(X)
 		>;
+		
         sensor-bindings = <&inc_dec_kp UP DN &inc_dec_kp LEFT RIGHT>;
+
 		};
+		
 			num_layer {
 		bindings = <
 	    &trans	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp PIPE			&kp KP_PLUS	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS	&kp KP_EQUAL
@@ -72,9 +76,11 @@
 	    &trans	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp KP_EQUAL		&eqarrw		&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_DIVIDE
 	    					&trans					&trans		&trans		&trans 				&trans		&kp UNDER		&trans		&trans
 		>;
+		
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
-
+		
 		};
+		
 			arrow_layer {
 		bindings = <
 	    &trans	&kp F1	&kp F2	&kp F3	&kp F4	&kp F5			&kp K_MUTE	&kp C_VOL_DN	&kp C_VOL_UP	&kp C_PP	&kp HOME	&kp END
@@ -82,8 +88,8 @@
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans		&kp C_BRI_DN	&kp C_BRI_UP	&trans		&trans		&trans
 	    				&trans	&trans	&trans	&trans			&trans		&trans			&trans			&trans
 		>;
+		
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
-
 		};
 	};
 };
