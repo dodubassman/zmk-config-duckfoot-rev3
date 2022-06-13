@@ -66,7 +66,6 @@
 		>;
 		
         sensor-bindings = <&inc_dec_kp UP DN &inc_dec_kp LEFT RIGHT>;
-
 		};
 		
 			num_layer {
@@ -78,7 +77,6 @@
 		>;
 		
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
-		
 		};
 		
 			arrow_layer {
