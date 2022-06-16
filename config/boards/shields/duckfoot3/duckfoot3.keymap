@@ -64,7 +64,7 @@
 	    &kp LSHIFT	&kp Z		&mt LALT X	&mt LA(C) C		&kp D				&kp V	 			&kp K		&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
 	    						&kp LALT	&kp LGUI		&mt LSHIFT BSPC 	&mo 1				&mo 2		&kp SPACE			&mt RCTL TAB	&kp K_MUTE
 		>;
-        sensor-bindings = <&inc_dec_kp LG(TAB) LS(LG(TAB))>;
+        sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 		
 			num_layer {
