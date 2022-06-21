@@ -38,7 +38,13 @@
 		        #binding-cells = <0>;
 		        bindings = <&kp GRAVE>, <&kp GRAVE>, <&kp GRAVE>;
 	        };
-
+            grtrplgrv: grave_trplgrv {
+                compatible = "zmk,behavior-mod-morph";
+                label = "GRAVE_TRPLGRV";
+                #binding-cells = <0>;
+                bindings = <&kp GRAVE>, <&trplgrv>;
+                mods = <(MOD_LGUI|MOD_RGUI)>;
+            };
         };
 
         combos {
@@ -65,7 +71,7 @@
             
             default_layer {
 		bindings = <
-	    &kp TAB				&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(K_PWR)) L	&kp O			&mt LA(I) Y			&kp SEMI		&kp BSPC
+	    &kp grtrplgrv		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(K_PWR)) L	&kp O			&mt LA(I) Y			&kp SEMI		&kp BSPC
 	    &kp LC(LG(SPACE))	&kp A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&mt LA(E) N			&kp E			&mt LA(GRAVE) I		&kp U			&mt trplgrv SQT
 	    &kp LSHIFT			&kp Z		&mt LALT X	&mt LA(C) C		&kp D				&kp V	 			&kp K		&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
 	    											&kp LALT	&kp LCTL	&mt LGUI BSPC	&mo 1		&mo 2		&kp SPACE		&mt RSHIFT TAB	&kp K_MUTE
