@@ -12,11 +12,16 @@
 &mt {
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
- };
+};
+
 &sk {
      release-after-ms = <2000>;
      quick-release;
- };
+};
+
+&mwh {
+    acceleration-exponent=<1>;
+};
 
 
 / { 
@@ -25,18 +30,21 @@
 		        compatible = "zmk,behavior-macro";
 		        label = "EQARRW";
 		        #binding-cells = <0>;
+		        wait-ms = <20>;
 		        bindings = <&kp KP_EQUAL>, <&kp GT>;
 	        };
 	        dasharrw: dasharrw_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "DASHARRW";
 		        #binding-cells = <0>;
+		        wait-ms = <20>;
 		        bindings = <&kp KP_MINUS>, <&kp GT>;
 	        };
 	        trplgrv: trplgrv_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "TRPLGRV";
 		        #binding-cells = <0>;
+		        wait-ms = <5>;
 		        bindings = <&kp GRAVE>, <&kp GRAVE>, <&kp GRAVE>;
 	        };
             grtrplgrv: grave_trplgrv {
@@ -67,12 +75,12 @@
             };
             combo_leftclick {
                 timeout-ms = <50>;
-                key-positions = <8 9>;
+                key-positions = <7 8>;
                 bindings = <&mkp LCLK>;
             };
             combo_rightclick {
                 timeout-ms = <50>;
-                key-positions = <7 8>;
+                key-positions = <8 9>;
                 bindings = <&mkp RCLK>;
             };
         };
@@ -101,10 +109,10 @@
 		
 			arrow_layer {
 		bindings = <
-	    &trans	&kp F1	&kp F2	&kp F3	&kp F4	&kp F5			&mmv MOVE_LEFT	&mmv MOVE_DOWN	&mmv MOVE_UP	&mmv MOVE_UP	&kp HOME	&kp END
-	    &trans	&kp F6	&kp F7  &kp F8	&kp F9	&kp F10			&kp LEFT		&kp DOWN		&kp UP			&kp RIGHT		&trans		&trans
-	    &trans	&trans	&trans	&trans	&trans	&trans			&trans			&kp C_BRI_DN	&kp C_BRI_UP	&trans			&trans		&trans
-	    				&trans	&trans	&trans	&trans			&trans			&trans			&trans			&trans
+	    &trans	&kp F1	&kp F2	&kp F3		&kp F4		&kp F5			&mmv MOVE_LEFT	&mmv MOVE_DOWN	&mmv MOVE_UP	&mmv MOVE_RIGHT	&kp HOME	&kp END
+	    &trans	&kp F6	&kp F7  &mkp RCLK	&mkp LCLK	&kp F10			&kp LEFT		&kp DOWN		&kp UP			&kp RIGHT		&trans		&trans
+	    &trans	&trans	&trans	&trans		&trans		&trans			&trans			&kp C_BRI_DN	&kp C_BRI_UP	&trans			&trans		&trans
+	    				&trans	&trans		&trans		&trans			&trans			&trans			&trans			&trans
 		>;
         };
 	};
