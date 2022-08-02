@@ -19,8 +19,9 @@
      quick-release;
 };
 
-&mwh {
+&mmv {
     acceleration-exponent=<1>;
+    time-to-max-speed-ms = <200>;
 };
 
 
