@@ -72,7 +72,7 @@
             
             default_layer {
 		bindings = <
-	    &none	&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(K_PWR)) L	&kp O		&mt LA(I) Y			&kp SEMI		&none
+	    &none	&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(K_PWR)) L	&kp O		&mt LA(I) Y			&kp SQT			&none
 	    &none	&kp A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&mt LA(E) N			&kp E		&mt LA(GRAVE) I		&kp U			&none
 	    &none	&mt LCTL Z	&mt LALT X	&mt LA(C) C		&kp D				&kp V	 			&kp K		&mt LA(U) M			&kp COMMA	&mt LA(SEMI) DOT	&mt BSLH FSLH	&none
 	    								&kp K_MUTE	&kp LSHIFT	&mt LGUI BSPC	&mo 1		&mo 2	&mt BSPC SPACE	&mt RSHIFT TAB	&kp C_PP
@@ -82,9 +82,9 @@
 		
 			num_layer {
 		bindings = <
-	    &none	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp GRAVE			&kp KP_MULTIPLY	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS	&none
-	    &none	&kp HASH	&mt LA(LS(AT)) DOLLAR	&kp LPAR	&kp RPAR	&kp TILDE			&dasharrw 		&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_N0		&none
-	    &none	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp PIPE			&eqarrw			&kp KP_N1	&kp KP_N2	&kp KP_N3	&mt LS(SQT) SQT	&none
+	    &none	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp GRAVE			&kp KP_MULTIPLY	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS		&none
+	    &none	&kp HASH	&mt LA(LS(AT)) DOLLAR	&kp LPAR	&kp RPAR	&kp TILDE			&dasharrw 		&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_N0			&none
+	    &none	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp PIPE			&eqarrw			&kp KP_N1	&kp KP_N2	&kp KP_N3	&mt LS(SEMI) SEMI	&none
 	    					&trans					&trans		&trans		&trans 				&trans			&kp UNDER		&trans		&trans
 		>;
         };
