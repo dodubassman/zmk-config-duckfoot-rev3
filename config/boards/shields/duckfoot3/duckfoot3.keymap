@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 &mt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     flavor = "tap-preferred";
 };
 
@@ -50,18 +50,28 @@
 
         combos {
             compatible = "zmk,combos";
+            combo_arrow1 {
+                timeout-ms = <20>;
+                key-positions = <7 19>;
+                bindings = <&eqarrw>;
+            };
+            combo_arrow2 {
+                timeout-ms = <20>;
+                key-positions = <8 20>;
+                bindings = <&dasharrw>;
+            };
             combo_esc {
-                timeout-ms = <50>;
-                key-positions = <15 16>;
+                timeout-ms = <20>;
+                key-positions = <14 15 16>;
                 bindings = <&kp ESC>;
             };
             combo_ent {
-                timeout-ms = <75>;
-                key-positions = <19 20>;
+                timeout-ms = <20>;
+                key-positions = <19 20 21>;
                 bindings = <&kp RET>;
             };
             combo_reset {
-                timeout-ms = <50>;
+                timeout-ms = <20>;
                 key-positions = <10 22>;
                 bindings = <&bt BT_CLR>;
             };
