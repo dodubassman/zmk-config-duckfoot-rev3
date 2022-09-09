@@ -10,9 +10,11 @@
 #include <dt-bindings/zmk/mouse.h>
 
 &mt {
+    flavor = "tap-preferred";
     tapping-term-ms = <175>;
     quick-tap-ms = <200>;
 };
+
 
 &mmv {
     acceleration-exponent=<1>;
@@ -81,7 +83,7 @@
 	    &none	&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(K_PWR)) L	&kp O		&mt LA(I) Y			&kp SQT			&none
 	    &none	&kp A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&mt LA(E) N			&kp E		&mt LA(GRAVE) I		&kp U			&none
 	    &none	&mt LCTL Z	&mt LALT X	&mt LA(C) C		&kp D				&kp V	 			&kp K		&mt LA(U) M			&kp COMMA	&mt LA(SEMI) DOT	&mt BSLH FSLH	&none
-	    								&kp K_MUTE	&kp LSHIFT	&mt LGUI BSPC	&mo 1		&mo 2	&mt BSPC SPACE	&mt RSHIFT TAB	&kp C_PP
+	    								&kp K_MUTE	&kp LSHIFT	&mt LGUI BSPC	&mo 1		&mo 2	&kp SPACE	&mt RSHIFT TAB	&kp C_PP
 		>;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP >;
         };
