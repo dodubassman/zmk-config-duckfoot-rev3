@@ -11,7 +11,7 @@
 
 &mt {
     tapping-term-ms = <175>;
-    quick-tap-ms;
+    quick-tap-ms = <200>;
 };
 
 &mmv {
@@ -57,12 +57,12 @@
                 bindings = <&dasharrw>;
             };
             combo_esc {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <14 15 16>;
                 bindings = <&kp ESC>;
             };
             combo_ent {
-                timeout-ms = <20>;
+                timeout-ms = <50>;
                 key-positions = <19 20 21>;
                 bindings = <&kp RET>;
             };
