@@ -28,13 +28,13 @@
 		        compatible = "zmk,behavior-macro";
 		        label = "EQARRW";
 		        #binding-cells = <0>;
-		        bindings = <&kp KP_EQUAL>, <&kp GT>;
+		        bindings = <&kp KP_EQUAL &kp GT>;
 	        };
 	        dasharrw: dasharrw_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "DASHARRW";
 		        #binding-cells = <0>;
-		        bindings = <&kp KP_MINUS>, <&kp GT>;
+		        bindings = <&kp KP_MINUS &kp GT>;
 	        };
 	        
 	        trplgrv: trplgrv_macro {
