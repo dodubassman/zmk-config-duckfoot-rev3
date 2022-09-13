@@ -36,7 +36,7 @@
             label = "LEFT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;                         // <---[[produces tap if held longer than tapping-term-ms]]
+            tapping-term-ms = <1000>;                         // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;    // <---[[right-hand keys]]
@@ -46,7 +46,7 @@
             label = "RIGHT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;                         // <---[[produces tap if held longer than tapping-term-ms]]
+            tapping-term-ms = <1000>;                         // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;    // <---[[left-hand keys]]
@@ -108,35 +108,40 @@
                 key-positions = <RT0 RT1 RM0 RM1>;
                 bindings = <&kp LC(LS(K_PWR))>;
             };
+            combo_print_screen {
+                timeout-ms = <20>;
+                key-positions = <LT0 LT1 LM0 LM1>;
+                bindings = <&kp LS(LG(N4))>;
+            };
         };
 
         keymap {
             compatible = "zmk,keymap";
             default_layer {
         bindings = <
-        &none  &kp Q       &kp W       &lh_pht LA(I) F      &mt LS(LG(N4)) P  &kp B               &kp J  &kp L            &kp O           &rh_pht LA(I) Y      &kp SQT         &none
-        &none  &kp A       &kp R       &lh_pht LA(GRAVE) S  &lh_pht LA(E) T   &kp G               &kp H  &rh_pht LA(E) N  &kp E           &rh_pht LA(GRAVE) I  &kp U           &none
-        &none  &mt LCTL Z  &mt LALT X  &mt LA(C) C          &lh_pht LA(U) D   &kp V               &kp K  &rh_pht LA(U) M  &kp COMMA       &mt LA(SEMI) DOT     &mt BSLH FSLH   &none
-                           &kp K_MUTE  &kp LSHIFT           &mt LGUI BSPC     &mo 1               &mo 2  &kp SPACE        &mt RSHIFT TAB  &kp C_PP
+        &none  &kp Q       &kp W            &kp F                &kp P             &kp B               &kp J  &kp L            &kp O                &kp Y             &kp SQT        &none
+        &none  &kp A       &lh_pht LA(I) R  &lh_pht LA(GRAVE) S  &lh_pht LA(E) T   &kp G               &kp H  &rh_pht LA(E) N  &rh_pht LA(GRAVE) E  &rh_pht LA(I) I   &kp U          &none
+        &none  &mt LCTL Z  &mt LALT X       &mt LA(C) C          &lh_pht LA(U) D   &kp V               &kp K  &rh_pht LA(U) M  &kp COMMA            &mt LA(SEMI) DOT  &mt BSLH FSLH  &none
+                           &kp K_MUTE       &kp LSHIFT           &mt LGUI BSPC     &mo 1               &mo 2  &kp SPACE        &mt RSHIFT TAB       &kp C_PP
         >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP >;
         };
         
             num_layer {
         bindings = <
-        &none   &kp EXCL    &kp AT                  &kp LBKT    &kp RBKT    &kp GRAVE           &kp KP_MULTIPLY &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS        &none
-        &none   &kp HASH    &mt LA(LS(AT)) DOLLAR   &kp LPAR    &kp RPAR    &kp TILDE           &kp PLUS        &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_N0           &none
-        &none   &kp PERCENT &kp AMPS                &kp LBRC    &kp RBRC    &kp PIPE            &kp EQUAL       &kp KP_N1   &kp KP_N2   &kp KP_N3   &mt LS(SEMI) SEMI   &none
-                                              &trans      &trans      &trans      &trans      &trans      &kp UNDER       &trans      &trans
+        &none  &kp EXCL     &kp AT                 &kp LBKT  &kp RBKT  &kp GRAVE               &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS       &none
+        &none  &kp HASH     &mt LA(LS(AT)) DOLLAR  &kp LPAR  &kp RPAR  &kp TILDE               &kp PLUS         &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0          &none
+        &none  &kp PERCENT  &kp AMPS               &kp LBRC  &kp RBRC  &kp PIPE                &kp EQUAL        &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt LS(SEMI) SEMI  &none
+                            &trans                 &trans    &trans    &trans                  &trans           &kp UNDER  &trans     &trans
         >;
         };
         
             arrow_layer {
         bindings = <
-        &none   &kp F1  &kp F2  &kp F3      &kp F4      &kp F5          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT &kp HOME    &none
-        &none   &kp F6  &kp F7  &mkp RCLK   &mkp LCLK   &kp F10         &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans      &none
-        &none   &trans  &trans  &trans      &trans      &trans          &trans          &kp C_BRI_DN    &kp C_BRI_UP    &trans          &trans      &none
-                        &trans  &trans      &trans      &trans          &trans          &trans          &trans          &trans
+        &none  &kp F1  &kp F2  &kp F3     &kp F4     &kp F5               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp HOME  &none
+        &none  &kp F6  &kp F7  &mkp RCLK  &mkp LCLK  &kp F10              &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &trans    &none
+        &none  &trans  &trans  &trans     &trans     &trans               &trans          &kp C_BRI_DN    &kp C_BRI_UP  &trans           &trans    &none
+                       &trans  &trans     &trans     &trans               &trans          &trans          &trans        &trans
         >;
         };
     };
