@@ -23,12 +23,12 @@
 #define RT4 10
 #define RT5 11
 
-#define LM0 12  // left-middle row
-#define LM1 13
-#define LM2 14
-#define LM3 15
-#define LM4 16
-#define LM5 17
+#define LM0 17  // left-middle row
+#define LM1 16
+#define LM2 15
+#define LM3 14
+#define LM4 13
+#define LM5 12
 
 #define RM0 18  // right-middle row
 #define RM1 19
@@ -37,12 +37,12 @@
 #define RM4 22
 #define RM5 23
 
-#define LB0 24  // left-bottom row
-#define LB1 25
-#define LB2 26
-#define LB3 27
-#define LB4 28
-#define LB5 29
+#define LB0 29  // left-bottom row
+#define LB1 28
+#define LB2 27
+#define LB3 26
+#define LB4 25
+#define LB5 24
 
 #define RB0 30  // right-bottom row
 #define RB1 31
@@ -51,10 +51,10 @@
 #define RB4 34
 #define RB5 35
 
-#define LH0 36  // left thumb keys
-#define LH1 37
-#define LH2 38
-#define LH3 39
+#define LH0 39  // left thumb keys
+#define LH1 38
+#define LH2 37
+#define LH3 36
 
 #define RH0 40  // right thumb keys
 #define RH1 41
