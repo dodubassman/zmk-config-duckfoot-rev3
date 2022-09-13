@@ -107,7 +107,7 @@
                 timeout-ms = <20>;
                 key-positions = <RT0 RT1 RM0 RM1>;
                 bindings = <&kp LC(LS(K_PWR))>;
-            }
+            };
         };
 
         keymap {
