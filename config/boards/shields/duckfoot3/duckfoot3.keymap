@@ -66,20 +66,10 @@
         };
         dot_qmrk: dot_question_mark {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOTE_QUESTION_MAREK";
+            label = "DOTE_QUESTION_MARK";
             #binding-cells = <0>;
-            bindings = <&kp FR_QUES>, <&kp FR_DOT>;
+            bindings = <&kp FR_QUES>, <&mt RA(FR_SCLN) FR_DOT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        
-        // Hod tap
-        dotdotmark: dot_tripledot_questmark {
-            compatible = "zmk,behavior-hold-tap";
-            label = "DOT_TRIPLEDOT_QUESTMARK";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <175>;
-            bindings = <&kp>, <&dot_qmrk>;
         };
     };
 
@@ -149,9 +139,9 @@
             compatible = "zmk,keymap";
             default_layer {
         bindings = <
-        &none  &kp FR_Q       &kp FR_W              &kp FR_F              &kp FR_P             &kp FR_B               &kp FR_J  &kp FR_L              &kp FR_O              &kp FR_Y                 &quot_dquot          &none
-        &none  &kp FR_A       &lh_pht FR_DIAE FR_R  &lh_pht FR_ACUT FR_S  &lh_pht FR_GRV FR_T  &kp FR_G               &kp FR_H  &rh_pht FR_GRV FR_N   &rh_pht FR_ACUT FR_E  &rh_pht FR_DIAE FR_I     &kp FR_U             &none
-        &none  &mt LCTL FR_Z  &mt LALT X            &mt FR_CCED C         &lh_pht FR_CIRC D    &kp V                  &kp K     &rh_pht FR_CIRC FR_M  &kp FR_COMM           &dotdotmark RA(FR_SCLN)  &mt FR_BSLS FR_SLSH  &none
+        &none  &kp FR_Q       &kp FR_W              &kp FR_F              &kp FR_P             &kp FR_B               &kp FR_J  &kp FR_L              &kp FR_O              &kp FR_Y              &quot_dquot          &none
+        &none  &kp FR_A       &lh_pht FR_DIAE FR_R  &lh_pht FR_ACUT FR_S  &lh_pht FR_GRV FR_T  &kp FR_G               &kp FR_H  &rh_pht FR_GRV FR_N   &rh_pht FR_ACUT FR_E  &rh_pht FR_DIAE FR_I  &kp FR_U             &none
+        &none  &mt LCTL FR_Z  &mt LALT X            &mt FR_CCED C         &lh_pht FR_CIRC D    &kp V                  &kp K     &rh_pht FR_CIRC FR_M  &kp FR_COMM           &dot_qmrk             &mt FR_BSLS FR_SLSH  &none
                               &kp K_MUTE            &kp LSHIFT            &mt LGUI BSPC        &mo 1                  &mo 2     &kp SPACE             &mt RSHIFT TAB        &kp C_PP
         >;
         sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
