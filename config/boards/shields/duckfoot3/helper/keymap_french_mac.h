@@ -78,7 +78,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define FR_HASH LS(GRAVE)   // # 
+#define FR_HASH LS(FR_AT)   // # 
 #define FR_1    LS(FR_AMPS) // 1
 #define FR_2    LS(FR_EACU) // 2
 #define FR_3    LS(FR_DQUO) // 3
@@ -90,7 +90,7 @@
 #define FR_9    LS(FR_CCED) // 9
 #define FR_0    LS(FR_AGRV) // 0
 #define FR_DEG  LS(FR_RPRN) // °
-#define FR_UNDS LS(FR_MINS)  // _
+#define FR_UNDS LS(FR_MINS) // _
 // Row 2
 #define FR_DIAE LS(FR_CIRC) // ¨ (dead)
 #define FR_ASTR LS(FR_DLR)  // *
@@ -102,7 +102,7 @@
 #define FR_QUES LS(FR_COMM) // ?
 #define FR_DOT  LS(FR_SCLN) // .
 #define FR_SLSH LS(FR_COLN) // /
-#define FR_PLUS LS(FR_EXLM) // +
+#define FR_PLUS LS(FR_EQL)  // +
 
 /* AltGr symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
