@@ -73,7 +73,7 @@
         };
         
         // Hod tap
-        dotdotmark:  {
+        dotdotmark: dot_tripledot_questmark {
             compatible = "zmk,behavior-hold-tap";
             label = "DOT_TRIPLEDOT_QUESTMARK";
             #binding-cells = <2>;
