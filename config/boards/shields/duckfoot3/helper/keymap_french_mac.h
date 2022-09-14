@@ -50,7 +50,7 @@
 #define FR_L    L           // L
 #define FR_M    SEMI        // M
 #define FR_UGRV SQT         // ù
-#define FR_ASTR NON_US_HASH // ` (dead)
+#define FR_GRV  NON_US_HASH // ` (dead)
 // Row 4
 #define FR_LABK NON_US_BSLH // <
 #define FR_W    Z           // W
@@ -62,7 +62,7 @@
 #define FR_COMM M           // ,
 #define FR_SCLN COMMA       // ;
 #define FR_COLN DOT         // :
-#define FR_EXLM FSLH        // !
+#define FR_EQL  FSLH        // =
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -106,9 +106,9 @@
 
 /* AltGr symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
- * │   │   │   │ # │ ‘ │ [ │ | │ ` │ \ │   │ @ │ ] │ } │       │
+ * │   │   │   │   │   │   │   │   │   │   │   │   │   │       │
  * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
- * │     │   │   │ € │   │   │   │   │   │   │   │   │ € │     │
+ * │     │   │   │   │   │   │   │   │   │   │   │   │ € │     │
  * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┐    │
  * │      │   │   │   │   │   │   │   │   │   │   │   │   │    │
  * ├────┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴────┤
@@ -117,18 +117,6 @@
  * │    │    │    │                        │    │    │    │    │
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
-// Row 1
-//#define FR_TILD RA(FR_EACU) // ~ (dead)
-//#define FR_HASH RA(FR_DQUO) // #
-//#define FR_LCBR RA(FR_QUOT) // {
-//#define FR_LBRC RA(FR_LPRN) // [
-//#define FR_PIPE RA(FR_MINS) // |
-//#define FR_GRV  RA(FR_EGRV) // ` (dead)
-//#define FR_BSLS RA(FR_UNDS) // (backslash)
-//#define FR_AT   RA(FR_AGRV) // @
-//#define FR_RBRC RA(FR_RPRN) // ]
-//#define FR_RCBR RA(FR_EQL)  // }
-
 // Row 2
 #define FR_EURO RA(FR_DLR)   // €
 // Row 4
