@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 #include "helper/keypos.h"
+#include "helper/keymap_french.h"
+
 
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5 // left-hand keys
@@ -119,20 +121,20 @@
             compatible = "zmk,keymap";
             default_layer {
         bindings = <
-        &none  &kp Q       &kp W            &kp F                &kp P             &kp B               &kp J  &kp L            &kp O                &kp Y             &kp SQT        &none
-        &none  &kp A       &lh_pht LA(I) R  &lh_pht LA(GRAVE) S  &lh_pht LA(E) T   &kp G               &kp H  &rh_pht LA(E) N  &rh_pht LA(GRAVE) E  &rh_pht LA(I) I   &kp U          &none
-        &none  &mt LCTL Z  &mt LALT X       &mt LA(C) C          &lh_pht LA(U) D   &kp V               &kp K  &rh_pht LA(U) M  &kp COMMA            &mt LA(SEMI) DOT  &mt BSLH FSLH  &none
-                           &kp K_MUTE       &kp LSHIFT           &mt LGUI BSPC     &mo 1               &mo 2  &kp SPACE        &mt RSHIFT TAB       &kp C_PP
+        &none  &kp FR_Q    &kp FR_W            &kp FR_F                  &kp FR_P             &kp FR_B               &kp FR_J  &kp FR_L                  &kp FR_O             &kp FR_Y                &kp FR_QUOT          &none
+        &none  &kp FR_A    &lh_pht LA(I) FR_R  &lh_pht RA(FR_ASTR) FR_S  &lh_pht FR_GRV FR_T  &kp FR_G               &kp FR_H  &lh_pht RA(FR_ASTR) FR_N  &rh_pht FR_GRV FR_E  &rh_pht LA(I) FR_I      &kp FR_U             &none
+        &none  &mt LCTL Z  &mt LALT X          &mt LA(C) C               &lh_pht FR_DIAE D    &kp V                  &kp K     &rh_pht FR_DIAE M         &kp COMMA            &mt LA(FR_SCLN) FR_DOT  &mt FR_BSLS FR_SLSH  &none
+                           &kp K_MUTE          &kp LSHIFT                &mt LGUI BSPC        &mo 1                  &mo 2     &kp SPACE                 &mt RSHIFT TAB       &kp C_PP
         >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP >;
         };
         
             num_layer {
         bindings = <
-        &none  &kp EXCL     &kp AT                 &kp LBKT  &kp RBKT  &kp GRAVE               &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS       &none
-        &none  &kp HASH     &mt LA(LS(AT)) DOLLAR  &kp LPAR  &kp RPAR  &kp TILDE               &kp PLUS         &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0          &none
-        &none  &kp PERCENT  &kp AMPS               &kp LBRC  &kp RBRC  &kp PIPE                &kp EQUAL        &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt LS(SEMI) SEMI  &none
-                            &trans                 &trans    &trans    &trans                  &trans           &kp UNDER  &trans     &trans
+        &none  &kp FR_EXLM  &kp FR_AT           &kp FR_LBRC  &kp FR_RBRC  &kp FR_GRV              &kp FR_ASTR  &kp KP_N7    &kp KP_N8  &kp KP_N9  &kp KP_MINUS         &none
+        &none  &kp FR_HASH  &mt FR_EURO FR_DLR  &kp FR_LPRN  &kp FR_LPRN  &kp FR_TILD             &kp FR_PLUS  &kp KP_N4    &kp KP_N5  &kp KP_N6  &kp KP_N0            &none
+        &none  &kp FR_PERC  &kp FR_AMPS         &kp FR_LCRB  &kp FR_RCBR  &kp FR_PIPE             &kp FR_EQL   &kp KP_N1    &kp KP_N2  &kp KP_N3  &mt FR_COLN FR_SCLN  &none
+                            &trans              &trans       &trans       &trans                  &trans       &kp FR_UNDS  &trans     &trans
         >;
         };
         
