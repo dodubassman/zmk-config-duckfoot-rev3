@@ -12,7 +12,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define FR_AT   GRAVE       // @
+#define FR_AT   NON_US_BSLH // @
 #define FR_AMPS N1          // &
 #define FR_EACU N2          // é
 #define FR_DQUO N3          // "
@@ -90,7 +90,7 @@
 #define FR_9    LS(FR_CCED) // 9
 #define FR_0    LS(FR_AGRV) // 0
 #define FR_DEG  LS(FR_RPRN) // °
-#define FR_UNDS LS(FR_EQL)  // _
+#define FR_UNDS LS(FR_MINS)  // _
 // Row 2
 #define FR_DIAE LS(FR_CIRC) // ¨ (dead)
 #define FR_ASTR LS(FR_DLR)  // *
