@@ -52,7 +52,7 @@
 #define FR_UGRV SQT         // ù
 #define FR_GRV  NON_US_HASH // ` (dead)
 // Row 4
-#define FR_LABK NON_US_BSLH // <
+#define FR_LABK GRAVE       // <
 #define FR_W    Z           // W
 #define FR_X    X           // X
 #define FR_C    C           // C
@@ -128,7 +128,7 @@
 
 /* Alt Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
- * │   │   │   │   │   │ [ │   │   │   │   │   │ ] │   │       │
+ * │   │ ´ │   │   │   │ [ │   │   │   │   │   │ ] │   │       │
  * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
  * │     │   │   │   │   │   │   │   │   │   │   │   │   │     │
  * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┐    │
@@ -140,6 +140,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
+#define FR_ACUT RA(RS(N1))    // ´ (dead)
 #define FR_LBRC RA(RS(N5))    // [
 #define FR_RBRC RA(RS(MINUS)) // ]
 // Row 3
