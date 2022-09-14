@@ -57,13 +57,14 @@
         };
 
         // Mod morph
-        quot_dquot: shift_quote {
+        quot_dquot: quote_dquote {
             compatible = "zmk,behavior-mod-morph";
             label = "QUOTE_DQUOTE";
             #binding-cells = <0>;
             bindings = <&kp FR_QUOT>, <&kp FR_DQUO>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dot_qmrk: dot_question_mark {
             compatible = "zmk,behavior-mod-morph";
             label = "DOTE_QUESTION_MARK";
