@@ -13,7 +13,7 @@
  */
 // Row 1
 #define FR_SUP2 GRAVE       // ²
-#define FR_AMPR N1          // &
+#define FR_AMPS N1          // &
 #define FR_EACU N2          // é
 #define FR_DQUO N3          // "
 #define FR_QUOT N4          // '
@@ -78,7 +78,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define FR_1    LS(FR_AMPR) // 1
+#define FR_1    LS(FR_AMPS) // 1
 #define FR_2    LS(FR_EACU) // 2
 #define FR_3    LS(FR_DQUO) // 3
 #define FR_4    LS(FR_QUOT) // 4
