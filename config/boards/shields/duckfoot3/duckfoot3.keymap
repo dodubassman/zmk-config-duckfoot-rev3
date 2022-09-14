@@ -79,7 +79,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <175>;
-            bindings = <&kp RA(FR_SCLN)>, <&dot_qmrk>;
+            bindings = <&kp RA(FR_SCLN) &dot_qmrk>;
         };
     };
 
