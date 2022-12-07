@@ -64,6 +64,13 @@
             bindings = <&mt FR_BSLS FR_SLSH>, <&kp FR_QUES>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        scln_coln: semicolon_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMICOLON_COLON";
+            #binding-cells = <0>;
+            bindings = <&mt FR_SCLN>, <&kp FR_COLN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
         macros {
@@ -125,6 +132,11 @@
                 timeout-ms = <20>;
                 key-positions = <LT0 LT1 LM0 LM1>;
                 bindings = <&kp LS(LG(N4))>;
+            };
+            combo_semic
+                timeout-ms = <20>;
+                key-positions = <RB2 RB3>;
+                bindings = <&scln_coln>;
             };
         };
 
