@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SEMICOLON_COLON";
             #binding-cells = <0>;
-            bindings = <&mt FR_SCLN>, <&kp FR_COLN>;
+            bindings = <&kp FR_SCLN>, <&kp FR_COLN>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
