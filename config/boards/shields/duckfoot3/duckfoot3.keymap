@@ -133,7 +133,7 @@
                 key-positions = <LT0 LT1 LM0 LM1>;
                 bindings = <&kp LS(LG(N4))>;
             };
-            combo_semic
+            combo_semic {
                 timeout-ms = <20>;
                 key-positions = <RB2 RB3>;
                 bindings = <&scln_coln>;
