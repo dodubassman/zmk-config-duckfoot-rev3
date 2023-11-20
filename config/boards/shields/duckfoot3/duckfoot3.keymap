@@ -124,7 +124,7 @@
         &none  &mt LCTL Z  &mt LALT X       &mt LA(C) C          &lh_pht LA(U) D   &kp V               &kp K  &rh_pht LA(U) M  &kp COMMA            &mt LA(SEMI) DOT  &mt BSLH FSLH  &none
                            &kp K_MUTE       &kp LSHIFT           &mt LGUI BSPC     &mo 1               &mo 2  &kp SPACE        &mt RSHIFT TAB       &kp C_PP
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP >;
+        sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         
             num_layer {
