@@ -149,7 +149,7 @@
         &none  &mt LCTL FR_Z  &mt LALT X            &mt FR_CCED C         &lh_pht FR_CIRC D    &kp V                  &kp K     &rh_pht FR_CIRC FR_M  &kp FR_COMM           &mt RA(FR_SCLN) FR_DOT  &sls_qmrk            &none
                               &kp K_MUTE            &kp LSHIFT            &mt LGUI BSPC        &mo 1                  &mo 2     &kp SPACE             &mt RSHIFT TAB        &kp C_PP
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP >;
+        sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         
             num_layer {
