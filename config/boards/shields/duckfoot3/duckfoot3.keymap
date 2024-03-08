@@ -148,7 +148,7 @@
         &none  &kp FR_Q       &kp FR_W              &kp FR_F              &kp FR_P             &kp FR_B               &kp FR_J  &kp FR_L              &kp FR_O              &kp FR_Y                &quo_dbquo  &none
         &none  &kp FR_A       &lh_pht FR_DIAE FR_R  &lh_pht FR_ACUT FR_S  &lh_pht FR_GRV FR_T  &kp FR_G               &kp FR_H  &rh_pht FR_GRV FR_N   &rh_pht FR_ACUT FR_E  &rh_pht FR_DIAE FR_I    &kp FR_U    &none
         &none  &mt LCTL FR_Z  &mt LALT X            &mt FR_CCED C         &lh_pht FR_CIRC D    &kp V                  &kp K     &rh_pht FR_CIRC FR_M  &kp FR_COMM           &mt RA(FR_SCLN) FR_DOT  &sls_qmrk   &none
-                              &kp K_MUTE            &kp LSHIFT            &mt LGUI BSPC        &mo 1                  &mo 2     &kp SPACE             &mt RSHIFT TAB        &kp C_PP
+                              &kp C_PP              &kp LSHIFT            &mt LGUI BSPC        &mo 1                  &mo 2     &kp SPACE             &mt RSHIFT TAB        &kp K_MUTE
         >;
         sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
