@@ -158,10 +158,10 @@
         
             num_layer {
         bindings = <
-        &none  &kp FR_EXLM  &kp FR_AT           &kp FR_LBRC          &kp FR_RBRC          &kp FR_GRV              &kp FR_ASTR  &kp KP_N7    &kp KP_N8  &kp KP_N9  &kp FR_BSLS   &none
-        &none  &kp FR_HASH  &mt FR_EURO FR_DLR  &mt FR_LABK FR_LPRN  &mt FR_RABK FR_RPRN  &kp FR_TILD             &kp FR_PLUS  &kp KP_N4    &kp KP_N5  &kp KP_N6  &kp KP_MINUS  &none
-        &none  &kp FR_PERC  &kp FR_AMPS         &kp FR_LCBR          &kp FR_RCBR          &kp FR_PIPE             &kp FR_EQL   &kp KP_N1    &kp KP_N2  &kp KP_N3  &kp FR_COLN   &none
-                            &trans              &trans               &trans               &trans                  &trans       &kp FR_UNDS  &kp KP_N0  &trans
+        &none  &kp FR_EXLM  &kp FR_AT           &kp FR_LBRC          &kp FR_RBRC          &kp FR_GRV              &kp FR_ASTR  &kp KP_N7    &kp KP_N8          &kp KP_N9  &kp FR_BSLS   &none
+        &none  &kp FR_HASH  &mt FR_EURO FR_DLR  &mt FR_LABK FR_LPRN  &mt FR_RABK FR_RPRN  &kp FR_TILD             &kp FR_PLUS  &kp KP_N4    &kp KP_N5          &kp KP_N6  &kp KP_MINUS  &none
+        &none  &kp FR_PERC  &kp FR_AMPS         &kp FR_LCBR          &kp FR_RCBR          &kp FR_PIPE             &kp FR_EQL   &kp KP_N1    &kp KP_N2          &kp KP_N3  &kp FR_COLN   &none
+                            &trans              &trans               &trans               &trans                  &trans       &kp FR_UNDS  &mt FR_DEG KP_N0   &trans
         >;
         };
         
